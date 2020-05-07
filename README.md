@@ -22,15 +22,16 @@ Things you may want to cover:
 |nickname|string|null: false|
 ### Association
 - has_many :messages
+- has_many :groups, through: :users_groups
+
 
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|groupname|string|null: false|
 ### Association
-- belongs_to :user
-- has_many  :groups
+- has_many :messages
+- has_many :users, through: :users_groups
 
 ## users_groupsテーブル
 |Column|Type|Options|
@@ -49,7 +50,7 @@ Things you may want to cover:
 |user_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
-- has_many :messages
+- belongs_to :group
 
 
 * Database initialization
