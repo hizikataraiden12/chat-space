@@ -1,0 +1,21 @@
+%div.chat-side
+  .side-header
+    .side-header__box
+      %p.side-header__box__user-name masa
+      %ul.side-header__box__right-box
+        = link_to "#", class: "side-header__box__right-box__make-group" do
+          = icon('fas', 'edit', class:'icon-edit')
+        = link_to "#", class: "side-header__box__right-box__edit-user" do
+          = icon('fas', 'cog', class:'icon-cog')
+  .groups
+    .group
+      %p.group__name techcamp 
+      %p.group__lastest-message まだメッセージはありません
+
+    .group
+      %p.group__name techcamp 
+      %p.group__lastest-message まだメッセージはありません
+
+    .group
+      %p.group__name techcamp 
+      %p.group__lastest-message まだメッセージはありません
