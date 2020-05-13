@@ -94,7 +94,6 @@
     }
     &__members-list {
       font-size: 12px;
-      padding-top: 15px;
       color: #999999;
     }
   }
@@ -117,6 +116,7 @@ a {
 
 
 .messages {
+  overflow: scroll;
   height: calc(100vh - 190px);
   background-color: #fafafa;
   padding: 35px 40px;
@@ -124,7 +124,7 @@ a {
     font-size: 14px;
     color: #434a54;
   }
-  &__message-one {
+  &__message {
     padding-bottom: 46px;
     &__info {
       display: flex;
