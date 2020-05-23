@@ -114,6 +114,9 @@ a {
   text-decoration: none;
 }
 
+.lower-message__content {
+  padding-bottom: 46px;
+}
 
 .messages {
   overflow: scroll;
@@ -158,6 +161,7 @@ a {
       color: gray;
       display: flex;
       align-items: center;
+      padding-left: 10px;
     }
     &__send-box {
       height: 50px;
