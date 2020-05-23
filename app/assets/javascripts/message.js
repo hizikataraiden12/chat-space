@@ -4,15 +4,15 @@ $(function () {
         //data-idが反映されるようにしている
         var html =
          `<div class="message" data-message-id=${message.id}>
-            <div class="upper-message">
-              <div class="upper-message__user-name">
+            <div class="messages__message__info">
+              <div class="messages__message__info__name ">
                 ${message.user_name}
               </div>
-              <div class="upper-message__date">
+              <div class="messages__message__info__date">
                 ${message.created_at}
               </div>
             </div>
-            <div class="lower-message">
+            <div class="messages__messege-text">
               <p class="lower-message__content">
                 ${message.content}
               </p>
@@ -24,11 +24,11 @@ $(function () {
         //同様にdata-idが反映されるようにしている
         var html =
          `<div class="message" data-message-id=${message.id}>
-            <div class="upper-message">
-              <div class="upper-message__user-name">
+            <div class="messages__message__info">
+              <div class="messages__message__info__name ">
                 ${message.user_name}
               </div>
-              <div class="upper-message__date">
+              <div class="messages__message__info__date ">
                 ${message.created_at}
               </div>
             </div>
